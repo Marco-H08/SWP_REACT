@@ -1,9 +1,8 @@
-import { useState } from 'react'
 import './App.css'
 import Card from './assets/components/Card'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
@@ -11,6 +10,7 @@ function App() {
       <div className="card-container">
         <Card />
         <Card />
+        <Card/>
         <Card/>
       </div>
     </>
