@@ -1,0 +1,13 @@
+body{
+  background-color: lightblue;
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.cardContainer{
+  display:flex;
+  gap: 1.5rem;
+}
