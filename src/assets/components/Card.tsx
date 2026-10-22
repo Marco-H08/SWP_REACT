@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styles from "./Card.module.css";
 
 type Props = {
@@ -7,17 +8,29 @@ type Props = {
 };
 
 export default function Card({ title, text, image }: Props) {
-  const randomNumber = Math.random();
-  const woerter = ["Apfel", "Banane", "Kirsche", "Dattel", "Erdbeere"];
-  const randomzahl = Math.floor(Math.random() * 5);
+  const [counter, setCounter] = useState(0);
+  const [randomNumber, setRandom] = useState(Math.random());
 
   return (
-    <div className={styles.card}>
+    <div
+      className={styles.card}
+      onClick={() => {
+        let newValue = counter + 1;
+        setCounter(newValue);
+        console.log(counter);
+      }}
+    >
       <img src={image + "?" + randomNumber} alt="Hero" />
       <h2>{title}</h2>
       <p>{text}</p>
-      <p>{randomNumber}</p>
-      <p>{woerter[randomzahl]}</p>
+      <p>Amount of clicks {counter}</p>
+      <button
+        onClick={() => {
+          setRandom(Math.random());
+        }}
+      >
+        Change Image
+      </button>
     </div>
   );
 }
