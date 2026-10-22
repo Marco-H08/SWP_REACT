@@ -1,5 +1,6 @@
 import Card from "./assets/components/Card";
 import styles from "./App.module.css";
+import BackwardsCount from "./assets/components/backwards_count";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           image="https://picsum.photos/200/300"
         />
       </div>
+      <BackwardsCount />
     </>
   );
 }
