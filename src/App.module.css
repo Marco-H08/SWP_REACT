@@ -7,7 +7,8 @@ h1{
   font-weight: bold;
 }
 
-.cardContainer{
-  display:flex;
-  gap: 2rem;
+.MyGallery
+{
+ width: 70%;
+ height:200px; 
 }
