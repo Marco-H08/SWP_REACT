@@ -9,6 +9,8 @@ h1{
 
 .MyGallery
 {
- width: 70%;
- height:200px; 
+ width: 50%;
+ height:100px; 
+ position: relative;
+ left: 200px;
 }

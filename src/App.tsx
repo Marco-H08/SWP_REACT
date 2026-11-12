@@ -1,12 +1,9 @@
-import styles from "./App.module.css";
-import { MyGallery } from "./assets/components/MyGallery";
+import Todos from "./components/Todos";
 
 function App() {
   return (
     <>
-      <div className={styles.MyGallery}>
-        <MyGallery />
-      </div>
+      <Todos />
     </>
   );
 }
